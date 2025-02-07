@@ -1,0 +1,23 @@
+base_model: models/base/mol-llama-1b
+gate_mode: hidden
+dtype: bfloat16
+experts_per_token: 6
+experts:
+  - source_model: models/mol-llama-1b/consolidated
+    positive_prompts:
+      - "<s>"
+  - source_model: models/mol-llama-1b-JNK3/consolidated
+    positive_prompts:
+      - "JNK3"
+  - source_model: models/mol-llama-1b-DRD2/consolidated
+    positive_prompts:
+      - "DRD2"
+  - source_model: models/mol-llama-1b-GSK3B/consolidated
+    positive_prompts:
+      - "GSK3B"
+  - source_model: models/mol-llama-1b-CYP2C19_Veith/consolidated
+    positive_prompts:
+      - "CYP2C19_Veith"
+  - source_model: models/mol-llama-1b-CYP2D6_Veith/consolidated
+    positive_prompts:
+      - "CYP2D6_Veith"
