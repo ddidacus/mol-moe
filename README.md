@@ -1,7 +1,7 @@
 # Mol-MoE: Training Preference-Guided Routers for Molecule Generation
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
 ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) 
-![nVIDIA](https://img.shields.io/badge/cuda-000000.svg?style=for-the-badge&logo=nVIDIA&logoColor=green)  
+[![Model on HF](https://huggingface.co/datasets/huggingface/badges/resolve/main/model-on-hf-sm.svg)](https://huggingface.co/collections/ddidacus/molecule-generation-models-678ad87b0c28503bf9b838a7)
 
 **Authors**: Diego Calanzone, Pierluca D'Oro, Pierre-Luc Bacon. <br>
 **Affiliation**: Mila Quebec AI Institute, Universite de Montreal.
@@ -11,6 +11,9 @@
 ![pipeline](assets/molmoe.png)
 
 ## Using the model
+
+> 🤗: [**HuggingFace models** available here!](https://huggingface.co/collections/ddidacus/molecule-generation-models-678ad87b0c28503bf9b838a7)
+
 `Mol-MoE` is a mixture of experts model based on `Llama-3.2-1B`, thus it works as a decoder-only transformer on auto-regressive generation. `Mol-MoE` is fine-tuned to generate molecules in the SMILES format wrt. desired properties. For unconditioned SMILES generation, use the BOS token `<s>`. For conditioned generation, you can target the following properties: JNK3, DRD2, GSK3B, CYP2D6, CYP2C19.
 ```
     prompt: <JNK3=0.3><DRD2=0.7><GSK3B=0.2><CYP2D6=0.8><CYP2C19=0.8><s> 
