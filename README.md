@@ -1,7 +1,7 @@
 # [Mol-MoE: Training Preference-Guided Routers for Molecule Generation](https://arxiv.org/abs/2502.05633)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) 
+[![arXiv](https://img.shields.io/badge/arXiv-2502.05633-b31b1b.svg?style=for-the-badge)](https://arxiv.org/abs/2502.05633)
 ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) 
-[![Model on HF](https://huggingface.co/datasets/huggingface/badges/resolve/main/model-on-hf-sm.svg)](https://huggingface.co/collections/ddidacus/molecule-generation-models-678ad87b0c28503bf9b838a7)
+[![Model on HF](https://img.shields.io/badge/-HuggingFace-FDEE21?style=for-the-badge&logo=HuggingFace&logoColor=black)](https://huggingface.co/collections/ddidacus/molecule-generation-models-678ad87b0c28503bf9b838a7)
 
 **Authors**: Diego Calanzone, Pierluca D'Oro, Pierre-Luc Bacon. <br>
 **Affiliation**: Mila Quebec AI Institute, Universite de Montreal.
@@ -172,6 +172,14 @@ Feel free to open a pull request to fix any bug/improve any step of the pipeline
 
 ## Citing Mol-MoE
 ```
-Coming soon.
+@misc{calanzone2025molmoetrainingpreferenceguidedrouters,
+      title={Mol-MoE: Training Preference-Guided Routers for Molecule Generation}, 
+      author={Diego Calanzone and Pierluca D'Oro and Pierre-Luc Bacon},
+      year={2025},
+      eprint={2502.05633},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2502.05633}, 
+}
 ```
 
